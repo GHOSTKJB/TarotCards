@@ -24,13 +24,13 @@ const useStyles = makeStyles((theme) => ({
     }
   }));
 
-  const Card = ({cardData}) => {
+  const Card = ({cardData, deleteCard}) => {
     const classes = useStyles()
     const {header, description} = cardData
     return (
       <Draggable className={classes.root}>
         <Paper style={{backgroundColor:"#03befc"}} varient="outlined" elevation={8} className={classes.card}>
-        <DeleteIcon onClick={deleteCard}/>
+        <DeleteIcon onClick={() => deleteCard(header)}/>
         <h1 > {header} </h1>
         <h2> {description} </h2>
         </Paper>
