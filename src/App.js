@@ -59,8 +59,6 @@ const deleteCard = (cardTitle) => {
   setSelectedCards(newCards)
 }
 
-console.log(savedCards)
-
 return (
   <div style={{display: 'flex' , flexDirection: 'column' , alignItems: 'center'}}>
       <h1>Welcome to TarotMaster v1</h1>
