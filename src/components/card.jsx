@@ -5,6 +5,7 @@ import { TextareaAutosize } from "@material-ui/core";
 import Draggable from 'react-draggable';
 import DeleteIcon from '@material-ui/icons/Delete';
 
+
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
@@ -29,9 +30,9 @@ const useStyles = makeStyles((theme) => ({
     const {header, description} = cardData
     return (
       <Draggable className={classes.root}>
-        <Paper style={{backgroundColor:"#03befc"}} varient="outlined" elevation={8} className={classes.card}>
+        <Paper style={{backgroundColor:"#03befc"}} variant="outlined" elevation={8} className={classes.card}>
         <DeleteIcon onClick={() => deleteCard(header)}/>
-        <h1 > {header} </h1>
+        <h1> {header} </h1>
         <h2> {description} </h2>
         </Paper>
       </Draggable>
