@@ -21,7 +21,10 @@ const useStyles = makeStyles((theme) => ({
     card: {
       backgroundColor: "#d1d1d1",
       width: "350px",
-      height: "auto"
+      height: "auto",
+      margin: "20px",
+      padding: "15",
+      textAlign: "center"
     }
   }));
 
