@@ -69,7 +69,7 @@ return (
       />
       
       <Fab size="small" color="primary" aria-label="add">
-        <AddIcon onClick={() => saveCard(card)}/>
+        <AddIcon variant="outlined" onClick={() => saveCard(card)}/>
       </Fab>
       {card ? <Card cardData={card} /> : <h1>Select a card</h1>}
       {savedCards.map((card) => 

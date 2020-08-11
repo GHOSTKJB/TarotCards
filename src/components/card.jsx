@@ -23,8 +23,13 @@ const useStyles = makeStyles((theme) => ({
       width: "350px",
       height: "auto",
       margin: "20px",
-      padding: "15",
-      textAlign: "center"
+      padding: "25",
+      textAlign: "center",
+      display: "flex",
+      flexDirection: "column"
+    },
+    deleteIcon: {
+      textAlign: "left",
     }
   }));
 
@@ -34,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     return (
       <Draggable className={classes.root}>
         <Paper style={{backgroundColor:"#03befc"}} variant="outlined" elevation={8} className={classes.card}>
-        <DeleteIcon onClick={() => deleteCard(header)}/>
+        <DeleteIcon className={classes.deleteIcon} onClick={() => deleteCard(header)}/>
         <h1> {header} </h1>
         <h2> {description} </h2>
         </Paper>
