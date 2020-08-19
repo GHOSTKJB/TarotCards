@@ -73,7 +73,7 @@ return (
       </Fab>
       {card ? <Card cardData={card} /> : <h1>Select a card</h1>}
       {savedCards.map((card) => 
-      <Card cardData={card} deleteCard={deleteCard}/>
+      <Card cardData={card} deleteCard={deleteCard} isSaved={true}/>
       )}
     </div>
   );
