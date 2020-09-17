@@ -12,7 +12,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-draggable": "^4.4.3",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "yarn": "^1.22.5"
   },
   "scripts": {
     "start": "react-scripts start",
