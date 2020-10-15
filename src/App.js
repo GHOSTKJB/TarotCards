@@ -6,6 +6,7 @@ import TextField from '@material-ui/core/TextField';
 import Card from "./components/card";
 import AddIcon from '@material-ui/icons/Add';
 import Fab from '@material-ui/core/Fab';
+import background from './background.jpg';
 
 const cards = [
   { header: "The Emperor", description: "The Emperor is seated on a throne “decorated with four rams’ heads, representing intellectual heights, determination, action, initiative, and leadership.” It is not at all obvious why rams’ heads should represent these things, and the last three sound like they were borrowed from Six Sigma." },
@@ -48,6 +49,7 @@ export default function App() {
     setCard(selectedCard);
 }, [searchCard]);
 
+
 const saveCard = (selectedCard) => {
   if(!selectedCard) return
   setSelectedCards([...savedCards , selectedCard])
@@ -60,25 +62,21 @@ const deleteCard = (cardTitle) => {
 }
 
 return (
-  <div style={{display: 'flex' , flexDirection: 'column' , alignItems: 'center'}}>
-      <h1>Welcome to TarotMaster v1</h1>
-      <TextField 
-      placeholder="Search a card!" 
-      onChange={e => setSearchCard(e.target.value)} 
-      value={searchCard}
-      />
-      
-      <Fab size="small" color="primary" aria-label="add">
-        <AddIcon variant="outlined" onClick={() => saveCard(card)}/>
-      </Fab>
-      {card ? <Card cardData={card} /> : <h1>Select a card</h1>}
-      {savedCards.map((card) => 
-      <Card cardData={card} deleteCard={deleteCard} isSaved={true}/>
-      )}
-    </div>
-  );
+  <div style={{display: 'flex' , flexDirection: 'column' , alignItems: 'center' , zIndex: -1 , backgroundImage: `url(${background})`, width: '100vw', height: '100vh'}}>
+    <h1>Welcome to TarotMaster v1</h1>
+    <TextField 
+    placeholder="Search a card!" 
+    onChange={e => setSearchCard(e.target.value)} 
+    value={searchCard}
+    />
+    
+    <Fab size="small" color="primary" aria-label="add">
+      <AddIcon variant="outlined" onClick={() => saveCard(card)}/>
+    </Fab>
+    {card ? <Card cardData={card} /> : <h1>Select a card</h1>}
+    {savedCards.map((card) => 
+    <Card cardData={card} deleteCard={deleteCard} isSaved={true}/>
+    )}
+  </div>
+);
 }
-
-
-
-
