@@ -32,7 +32,7 @@ const cards = [
   { header: "The Judgement", description: "The Judgment card means judgment, not surprisingly, but also an inner voice, sudden realization, or higher calling. Judgment is about resolution, the cathartic climax to all of your struggles. The Judgment card also looks absolutely crazy."},
   { header: "The World", description: "The World is the last card of the major arcana, and represents the summation of the journey begun by the Fool. After all the adventures of the past 21 cards, the World represents accomplishment, closure, and completion."},
 
-  { header: "Ace of Wands", description: "Inspiration, new opportunities, growth, potential, Optimism" flipped: "An emerging idea, lack of direction, distractions, delays" },
+  { header: "Ace of Wands", description: "Inspiration, new opportunities, growth, potential, Optimism", flipped: "An emerging idea, lack of direction, distractions, delays" },
   { header: "Two of Wands", description: "Future planning, progress, decisions, discovery", flipped: "Personal goals, inner alignment, fear of unknown, lack of planning" },
   { header: "Three of Wands", description: "Progress, expansion, foresight, overseas opportunities", flipped: "Progress, expansion, foresight, overseas opportunities" },
   { header: "Four of Wands", description: "Celebration, joy, harmony, relaxation, homecoming", flipped: "Personal celebration, inner harmony, conflict with others, transition." },
