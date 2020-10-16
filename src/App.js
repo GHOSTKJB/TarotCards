@@ -32,7 +32,21 @@ const cards = [
   { header: "The Judgement", description: "The Judgment card means judgment, not surprisingly, but also an inner voice, sudden realization, or higher calling. Judgment is about resolution, the cathartic climax to all of your struggles. The Judgment card also looks absolutely crazy."},
   { header: "The World", description: "The World is the last card of the major arcana, and represents the summation of the journey begun by the Fool. After all the adventures of the past 21 cards, the World represents accomplishment, closure, and completion."},
 
-  { header: "Ace of Wands", description: "The Ace of Wands as a symbol of optimism and invention." }
+  { header: "Ace of Wands", description: "Inspiration, new opportunities, growth, potential, Optimism" flipped: "An emerging idea, lack of direction, distractions, delays" },
+  { header: "Two of Wands", description: "Future planning, progress, decisions, discovery", flipped: "Personal goals, inner alignment, fear of unknown, lack of planning" },
+  { header: "Three of Wands", description: "Progress, expansion, foresight, overseas opportunities", flipped: "Progress, expansion, foresight, overseas opportunities" },
+  { header: "Four of Wands", description: "Celebration, joy, harmony, relaxation, homecoming", flipped: "Personal celebration, inner harmony, conflict with others, transition." },
+  { header: "Five of Wands", description: "Conflict, disagreements, competition, tension, diversity", flipped: "Inner conflict, conflict avoidance, tension release" },
+  { header: "Six of Wands", description: "Success, public recognition, progress, self-confidence", flipped: "Private achievement, personal definition of success, fall from grace, egotism" },
+  { header: "Seven of Wands", description: "Challenge, competition, protection, perseverance", flipped: "Exhaustion, giving up, overwhelmed" },
+  { header: "Eight of Wands", description: "Movement, fast paced change, action, alignment, air travel", flipped: "Delays, frustration, resisting change, internal alignment" },
+  { header: "Nine of Wands", description: "Resilience, courage, persistence, test of faith, boundaries", flipped: "Inner resources, struggle, overwhelm, defensive, paranoia" },
+  { header: "Ten of Wands", description: "Burden, extra responsibility, hard work, completion", flipped: "Doing it all, carrying the burden, delegation, release" },
+  { header: "Page of Wands", description: "Inspiration, ideas, discovery, limitless potential, free spirit", flipped: "Newly-formed ideas, redirecting energy, self-limiting beliefs, a spiritual path" },
+  { header: "Knight of Wands", description: "Energy, passion, inspired action, adventure, impulsiveness", flipped: "Passion project, haste, scattered energy, delays, frustration" },
+  { header: "King of Wands", description: "Natural-born leader, vision, entrepreneur, honour", flipped: "Impulsiveness, haste, ruthless, high expectations" },
+  { header: "Queen of Wands", description: "Courage, confidence, independence, social butterfly, determination", flipped: "Self-respect, self-confidence, introverted, re-establish sense of self" }
+
 ];
 
 
