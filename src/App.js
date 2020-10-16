@@ -30,7 +30,9 @@ const cards = [
   { header: "The Moon", description: "One might assume the Moon would be a good card, suggesting femininity, fertility, and other mystically significant things, but in fact, the Moon is a mixed bag at best. The card represents intuition, but also subconscious fears and dark impulses. The Moon is associated with the eerie, mysterious elements of our unconscious minds, including recovered memories and nightmares."},
   { header: "The Sun", description: "The Sun is everything the Moon is not: open, positive, upbeat. Whereas the Star is serene and blissful, the Sun is way too chipper. The Sun played “Get Lucky” at his wedding. The Sun cheers for the kiss cam. The Sun likes to shout “I can’t hear you!” from the stage. The Sun means well, but all the other cards are embarrassed for him."},
   { header: "The Judgement", description: "The Judgment card means judgment, not surprisingly, but also an inner voice, sudden realization, or higher calling. Judgment is about resolution, the cathartic climax to all of your struggles. The Judgment card also looks absolutely crazy."},
-  { header: "The World", description: "The World is the last card of the major arcana, and represents the summation of the journey begun by the Fool. After all the adventures of the past 21 cards, the World represents accomplishment, closure, and completion."}
+  { header: "The World", description: "The World is the last card of the major arcana, and represents the summation of the journey begun by the Fool. After all the adventures of the past 21 cards, the World represents accomplishment, closure, and completion."},
+
+  { header: "Ace of Wands", description: "The Ace of Wands as a symbol of optimism and invention." }
 ];
 
 
@@ -64,7 +66,8 @@ const deleteCard = (cardTitle) => {
 return (
   <div style={{display: 'flex' , flexDirection: 'column' , alignItems: 'center' , zIndex: -1 , backgroundImage: `url(${background})`, width: '100vw', height: '100vh'}}>
     <h1>Welcome to TarotMaster v1</h1>
-    <h2>Search the card below, and click the + to save it. Example: "Ace of cups"</h2>
+    <h2>Search the card below, and click the + to save it.</h2>
+    <h2>Example: "Ace of cups" or "The Emperor"</h2>
     <TextField 
     placeholder="Search a card!" 
     onChange={e => setSearchCard(e.target.value)} 
