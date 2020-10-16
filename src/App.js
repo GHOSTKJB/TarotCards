@@ -64,13 +64,14 @@ const deleteCard = (cardTitle) => {
 return (
   <div style={{display: 'flex' , flexDirection: 'column' , alignItems: 'center' , zIndex: -1 , backgroundImage: `url(${background})`, width: '100vw', height: '100vh'}}>
     <h1>Welcome to TarotMaster v1</h1>
+    <h2>Search the card below, and click the + to save it. Example: "Ace of cups"</h2>
     <TextField 
     placeholder="Search a card!" 
     onChange={e => setSearchCard(e.target.value)} 
     value={searchCard}
     />
     
-    <Fab size="small" color="primary" aria-label="add">
+    <Fab style={{margin: '10px'}} size="small" color="primary" aria-label="add">
       <AddIcon variant="outlined" onClick={() => saveCard(card)}/>
     </Fab>
     {card ? <Card cardData={card} /> : <h1>Select a card</h1>}
